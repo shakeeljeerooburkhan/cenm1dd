@@ -1,3 +1,42 @@
 h1{
     color: aquamarine;
 }
+
+/*BARRE DE NAVIGATION*/
+
+nav ul li a {
+text-transform: capitalize;
+font-weight: bold;
+letter-spacing: 1px;
+}
+
+#btn-connect{
+    border-radius: 25px;
+}
+  
+  
+
+/*FOOTER*/
+footer {
+	background: #333;
+	padding: 20px 0 40px;
+}
+
+footer .glyphicon{
+	font-size: 25px;
+	margin: 20px;
+	color: #fff;
+	height: 30px;
+}
+
+footer .fa-chevron-circle-up, .fa-envelope, .fa-phone, .fa-github{
+	font-size: 25px;
+	margin: 20px;
+	color: #fff;
+	height: 30px;
+}
+
+footer h5 {
+	color: #fff;
+	font-weight: normal;
+}
