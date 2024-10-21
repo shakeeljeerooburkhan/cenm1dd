@@ -1,59 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="js/script.js"></script>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data visualisation : Foot</title>
-  </head>
-  <body>
-    <!--Barre de naviagtion-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">Shakeel</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <title>Arsenal FC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="ex1.html"><i class="fas fa-chart-line"></i>1</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ex2.html"><i class="fas fa-envelope-open-text"></i>2</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ex3.html"><i class="fas fa-envelope-open-text"></i>3</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ex4.html"><i class="fas fa-envelope-open-text"></i>4</a>
-          </li>
-      </div>
-    </nav>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Équipe</a></li>
+                <li><a href="#">Résultats</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section class="hero">
+            <h1>Bienvenue sur le site officiel d'Arsenal FC</h1>
+            <p>Découvrez les dernières nouvelles, les matchs, et bien plus encore.</p>
+        </section>
 
+        <section>
+          <h1>Data joueurs de foot passés par le club d'Arsenal</h1>
+         <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3Fnationalit%C3%A9%20%3Fnationalit%C3%A9Label%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cmul%2Cen%22.%20%7D%0A%20%20%3Fnationalit%C3%A9%20wdt%3AP54%20wd%3AQ9617.%0A%7D%0ALIMIT%20100" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+        </section>
+        
+        <section>
+         <img src="img/graphique1.png">
+         <img src="img/graphique2.png">
+        </section>
+        
+    </main>
 
+    <footer>
+        <p>&copy; 2024 Arsenal FC - Tous droits réservés.</p>
+    </footer>
 
-    <h1>Data joueurs de foot passés par le club d'Arsenal</h1>
-
-    <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3Fnationalit%C3%A9%20%3Fnationalit%C3%A9Label%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cmul%2Cen%22.%20%7D%0A%20%20%3Fnationalit%C3%A9%20wdt%3AP54%20wd%3AQ9617.%0A%7D%0ALIMIT%20100" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
-
-
-
-
-
-    <!--Bas de la page -->
-    <footer class="text-center">
-      <a href="#profil"><i class="fas fa-chevron-circle-up"></i></a>
-      <h5>
-        ©Shakeel JEEROOBURKHAN | 2024   
-      </h5>
-    </footer>	
-  </body>
+</body>
 </html>
