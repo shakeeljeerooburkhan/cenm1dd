@@ -8,40 +8,49 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Équipe</a></li>
-                <li><a href="#">Résultats</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-      <section class="hero">
-          <h1>Data visualisation d'Arsenal FC</h1>
-          <p></p>
-      </section>
-
-      <section>
-        <h1>Data joueurs de foot passés par le club d'Arsenal</h1>
-        <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3Fnationalit%C3%A9%20%3Fnationalit%C3%A9Label%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cmul%2Cen%22.%20%7D%0A%20%20%3Fnationalit%C3%A9%20wdt%3AP54%20wd%3AQ9617.%0A%7D%0ALIMIT%20100" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
-      </section>
+  <header>
+    <div class="wrapper">
+      <h1 class="logo">Generic<span>Logo</span></h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#"><i class="fa fa-home nav-icon"></i>Home</a></li>
+          <li><a href="#"><i class="fa fa-info nav-icon"></i>About</a></li>
+          <li><a href="#"><i class="fa fa-usd nav-icon"></i>Service</a></li>
+          <li><a href="#"><i class="fa fa-pencil nav-icon"></i>Blog</a></li>
+          <li><a href="#"><i class="fa fa-envelope nav-icon"></i>Contact Us</a></li>
+        </ul>
+      </nav>
       
-      <section>
-        <img src="img/graphique1.png">
-        <img src="img/graphique2.png">
-      </section>
+      <div class="menu-toggle">
+        <div class="hamburger"></div>
+      </div>
+      
+    </div>
+  </header>
 
-      <section>
-        <img src="img/rawgraph-arsenal.png">
-      </section>
-    </main>
+  <main>
+    <section class="hero">
+        <h1>Data visualisation d'Arsenal FC</h1>
+        <p></p>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Arsenal FC - Tous droits réservés.</p>
-    </footer>
+    <section>
+      <h1>Data joueurs de foot passés par le club d'Arsenal</h1>
+      <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20%3Fnationalit%C3%A9%20%3Fnationalit%C3%A9Label%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cmul%2Cen%22.%20%7D%0A%20%20%3Fnationalit%C3%A9%20wdt%3AP54%20wd%3AQ9617.%0A%7D%0ALIMIT%20100" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+    </section>
+    
+    <section>
+      <img src="img/graphique1.png">
+      <img src="img/graphique2.png">
+    </section>
+
+    <section>
+      <img src="img/rawgraph-arsenal.png">
+    </section>
+  </main>
+
+  <footer>
+      <p>&copy; 2024 Arsenal FC - Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
