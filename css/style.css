@@ -3,12 +3,6 @@ font-family: sans-serif;
 }
 
 /*MENU*/
-.wrapper {
-width: 100%;
-max-width: 1000px;
-margin: 0 auto;
-}
-
 header {
 background: #e54b4b;
 color: #ebebd3;
@@ -35,7 +29,7 @@ font-weight: 400;
 }
 
 .main-nav {
-position: absolute;
+position: fixed;
 top: 100%;
 right: 0;
 left: 0;
@@ -64,11 +58,16 @@ border-bottom: none;
 
 
 .main-nav a {
-color: white;
-display: block;
-padding: 1em 1em;
-text-decoration: none;
-text-transform: uppercase;
+    display: inline-block;
+    width: 100px;
+    height: 55px;
+ 
+    color: White;
+ 
+    text-align: center;
+    line-height: 55px;
+ 
+    text-decoration: none;
 }
 
 .main-nav a:hover,
