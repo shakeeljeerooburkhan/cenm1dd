@@ -9,29 +9,40 @@
 </head>
 
 <body>
-  <header>
-    <div class="wrapper">
-      <h1 class="logo">Generic<span>Logo</span></h1>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html"><i class="fa fa-home nav-icon"></i>Data vis de la PL 2023</a></li>
-          <li><a href="ars-poste-2024.html"><i class="fa fa-info nav-icon"></i>Joueurs d'Arsenal par poste 2024</a></li>
-          <li><a href="ars-pays-2024.html"><i class="fa fa-usd nav-icon"></i>Joueurs d'Arsenal par nationalité 2024</a></li>
-          <li><a href="ars-players-all.html"><i class="fa fa-pencil nav-icon"></i>Joueurs ayant joué à Arsenal</a></li>
-          <li><a href="#"><i class="fa fa-envelope nav-icon"></i>AAAAAAAA</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <nav>
+    <div class="logo"><a href="index.html"></a>Data Vis Football</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <ul>
+        <li><a href="index.html">Data vis de la PL 2023</a></li> 
+        <!-- <li><a href="ars-poste-2024.html">Joueurs d'Arsenal par poste 2024</a></li> -->
+        <li><a href="ars-pays-2024.html">Joueurs d'Arsenal par nationalité 2024</a></li>
+        <li><a href="ars-players-all.html">Joueurs ayant joué à Arsenal</a></li>
+        <li><a href="info.html">Informations</a></li>
+    </ul>
+    <button class="btn">S'inscrire</button>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+        const ul = document.querySelector('nav ul');
+        ul.classList.toggle('active');
+    }
+  </script>
 
   <main>
     <section>
+      <h1>Diagramme en Arc de l'équipe de football d'Arsenal</h1>
       <img src="img/rawgraph-arsenal.png">
+      <p>
+        Le diagramme ci-dessus est un diagramme en <strong>arc</strong>, il relaye les joueurs de l'équipe d'Arsenal de la saison 2024-25.<br>
+        Les différents joueurs sont regroupés par leur poste : attaquant, millieu, défenseur et gardien.
+      </p>
+
     </section>
   </main>
 
   <footer>
-      <p>&copy; 2024 Arsenal FC - Tous droits réservés.</p>
+    &copy; 2024-2025 Data visualisation - Shakeel J. - Tous droits réservés.
   </footer>
 </body>
 </html>
