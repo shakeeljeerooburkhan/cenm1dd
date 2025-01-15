@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data vis</title>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="javascript" href="anim.js">
 </head>
@@ -11,52 +12,122 @@
 <body>
   <nav>
     <div class="logo"><a href="index.html"></a>Data Vis Football</div>
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     <ul>
         <!-- <li><a href="index.html">Data vis de la PL 2023</a></li> -->
         <li><a href="ars-poste-2024.html">Joueurs d'Arsenal par poste 2024</a></li>
         <li><a href="ars-pays-2024.html">Joueurs d'Arsenal par nationalité 2024</a></li>
         <li><a href="ars-players-all.html">Joueurs ayant joué à Arsenal</a></li>
-        <li><a href="info.html">Informations</a></li>
+        <!-- <li><a href="info.html">Informations</a></li> -->
     </ul>
-    <button class="btn">S'inscrire</button>
   </nav>
 
-  <script>
-    function toggleMenu() {
-        const ul = document.querySelector('nav ul');
-        ul.classList.toggle('active');
-    }
-  </script>
-
   <main>
+    <section class="hero">
+        <div class="title">
+            <h1>Data visualisation de football </h1>
+        </div>
+        <div class="content">
+            <h1>Contexte du projet</h1>
+            <p>Ce projet est une data visualisation de la saison 2022/23 du championnat anglais, la Premier League. Ce chamionnat est composée d'un demi million de joueurs et 20 équipes. </p>
+
+            <p>
+                <b>Player</b> = prénom et nom;
+                <b>Nation</b> = Pays du joueur;
+                <b>Pos</b> = Poste du joueurs;
+                <b>Club</b> = Club de foot du joueur;
+                <b>Gls</b> = Nombre de buts;
+                <b>Ast</b> = Passe décisives;
+                <b>G+A</b> = Nombres de buts et de passes décisives.
+            </p>
+
+            <h1>Outils utilisées</h1>
+            <p>
+              Pour ce projet, j'ai utilisé : <br>
+              1. Pour le graphique 1, j'ai utilsé le logiciel <b>Tableau.</b><br>
+              2. Pour le graphique 2, j'ai utilsé le logiciel <b>Carto.</b><br>
+              3. Pour le graphique 3, j'ai utilsé le logiciel <b>Flourishe Studio.</b><br>
+            </p>
+
+            <h1>Donées utilisées</h1>
+            <p>
+              Pour ce projet, j'ai utilsé les données du site "Kaggle" qui propose des données de la saison 2022-23 du championnat anglais de football, la Premiere League.<br>
+            </p>
+            <button id="btn-data"><a href="https://docs.google.com/spreadsheets/d/10ISsDizYHLF89R-hzlXrkjtqa3AXAsYgxXzeNN0ubiA/edit?usp=sharing" target="blank">Lien des données</a></button>
+        </div>
+    </section>
+
+
+
+
     <section class="first-graph">
-      <p>
-         Ce premier graphique montre les meilleurs buteurs du championnat de Premier League par l'origine du buteur, sur une carte du monde.
+      <h1>Graphique 1</h1>
+      <div class="divider"></div>
+
+      <p class="sec-par">
+         Ce graphique montre les meilleurs buteurs du championnat, sur une carte du monde.
       </p>
 
-      <div class='tableauPlaceholder' id='viz1736782722244' style='position: relative'><noscript><a href='#'><img alt='Graphique 1 : Buteurs PL 2022-23 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Classeur1_17367827072290&#47;Graphique1ButeursPL2022-23&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Classeur1_17367827072290&#47;Graphique1ButeursPL2022-23' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Classeur1_17367827072290&#47;Graphique1ButeursPL2022-23&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='fr-FR' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1736782722244');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+      <div class='tableauPlaceholder' id='viz1736966082197' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt='Graphique 1 : Buteurs PL 2022-23 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Classeur2_17369660653400&#47;Graphique1ButeursPL2022-23&#47;1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+          <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+          <param name='name' value='Classeur2_17369660653400&#47;Graphique1ButeursPL2022-23' />
+          <param name='tabs' value='no' /><param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cl&#47;Classeur2_17369660653400&#47;Graphique1ButeursPL2022-23&#47;1.png' /> 
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' /><param name='language' value='fr-FR' />
+          <param name='filter' value='publish=yes' /></object>
+        </div> 
 
+        <script type='text/javascript'>                    var divElement = document.getElementById('viz1736966082197');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1366px';vizElement.style.height='795px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>
 
+      <script type='text/javascript'>                    var divElement = document.getElementById('viz1736782722244');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='800px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+      </script>
+      
     </section>
 
     <section class="second-graph">
-      <p>
-         Ce deuxième graphique montre les meilleur buteurs et passeurs par équipe, sur une carte de l'Angleterre.
+      <h1>Graphique 2</h1>
+      <div class="divider"></div>
+
+      <p class="sec-par">
+         Ce deuxième graphique montre les différentes localisations des stades de foot de chaque club, sur une carte de l'Angleterre interactive.
+         De plus, on peut y apercevoir à droite de cette carte, deux graphiques qui montrent les différentes statistiques des joueurs :
+         - Le premier graphique présente, sur un diagramme en barres horizontales, les joueurs qui ont réalisé le plus de passes décisives.
+         - Le deuxième graphique présente, dans un diagramme circulaire, les joueurs ayant marqué le plus de buts et de passes décisives.
       </p>
 
-      <iframe width="640px" height="360px" src="https://clausa.app.carto.com/map/cc6fb8ae-cde8-4b82-a627-070d712802e6"></iframe>
+      <iframe width="80%" height="850px" src="https://clausa.app.carto.com/map/cc6fb8ae-cde8-4b82-a627-070d712802e6"></iframe>
     </section>
 
     <section class="third-graph">
-      <p>
-         Ce troisième graphique montre les meilleurs passeurs du championnat.
+      <h1>Graphique 3</h1>
+      <div class="divider"></div>
+
+      <p class="parag-sect">
+        Ce graphique numéro 3 met en évidence les buts, les passes décisives et les deux de chaque équipe.<br>
+        En utilisant un filtre, il est possible de choisir l'une des 20 équipes du championnat.<br>
+        Pour visualiser ces données, j'ai choisi d'utiliser 3 digrammes circulaires qui présentent les détails au survol du joueur de l'équipe impliqué dans la donnée choisie.
       </p>
+
+      <div id="d3" class="flourish-embed flourish-chart" data-src="visualisation/21174211"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/21174211/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+
     </section>
 
     
   <footer>
-    &copy; 2024-2025 Data visualisation - Shakeel J. - Tous droits réservés.
+    <p>
+      &copy; 2024-2025 Data visualisation - Shakeel J. - Tous droits réservés.
+    </p>
   </footer>
+
 </body>
 </html>
